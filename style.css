@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -11;
+    background: url(./bg.jpg);
+    background-size: cover;
+    filter: blur(3px);
+}
+.bg-img2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -10;
+    background: rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    filter: blur(4px);
+}
+#particles-js {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    z-index: -9;
+}
+.wrapper {
+    display: flex;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    align-items: center;
+    position: absolute;
+    background: #00000033;
+    border-radius: 10px;
+}
+.wrapper div span {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    margin: 0 20px;
+    z-index: 10;
+    text-shadow: 0 0 5px #000000;
+}
+.wrapper div span:nth-child(2) {
+    height: 40px;
+    font-size: 15px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    z-index: 9;
+    background: transparent;
+    text-transform: uppercase;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.container span {
+    font-family: "Tangerine", cursive;
+    font-size: 75px;
+    color: #fff;
+    text-shadow: 0 0 5px #000000;
+}
+.container span:nth-child(2) {
+    font-size: 175px;
+}
+@media (max-width: 570px) {
+    .wrapper div span {
+        width: 50px;
+        height: 70px;
+        font-size: 55px;
+    }
+    .wrapper div span:nth-child(2){
+        font-size: 12px;
+    }
+    .container span{
+        font-size: 50px;
+    }
+}
